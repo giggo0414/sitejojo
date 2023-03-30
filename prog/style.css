@@ -1,0 +1,23 @@
+body{background-color: rgb(40, 25, 55);}
+* {margin: 0 20px;
+    padding: 20px 0;}
+.cabeçalho{background-color: black;
+color: white;
+display: flex;
+justify-content: space-around;
+padding: 15px 0;}
+.cabeçalho-imagem{
+    width: 15%;}
+.itens{display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;}
+section{background-image: linear-gradient(black,rgb(40,25,55));
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 24px 0;}
+h2{padding: 40px 0;}
+p{width: 40%}
+img{width: 30%;}
+
