@@ -5,40 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bizarre Jornal</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <link rel=”stylesheet” href=”reset.css”>
 </head>
+<body>
+    
 <header class="cabeçalho">
     <img class="cabeçalho-imagem" src="https://wallpapercave.com/wp/wp2200978.png">
     <h1>Bizarre Jornal</h1>
-    <ul>
-        <li class="itens">Entrar</li>
-        <li class="itens">Cadastro</li>
-        <li class="itens">Meu Stand</li>
-        </ul>
+    <a href=”#”><img src=”data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFBgWFBUZGRgZHR4dGhkcGhweHhgeHBwfGRocGBwcIS4lHB4rHxkcJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjcsJSsxOjcxNDc6PzQxMTY0NDQxND00NzE0MTcxMTQ0NDQ0NjQ3NjU0NDQ0MTQ0NDQ0NDE0NP/AABEIAQsAvQMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQMCBAUGB//EADgQAAEDAgQEAwcCBQUBAAAAAAEAAhEDIQQSMUEFUWFxIoGRBjKhscHR8BNCI1Ji4fEUFXKCosL/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKxEAAgICAQQBAwIHAAAAAAAAAAECEQMhEgQxQVFhInGBE/AFFDKRobHB/9oADAMBAAIRAxEAPwD52iIgCIiAIiIAiKl1YBzW7mfL8ugLkRYvcGgk6BAYYiuGjmToOa1BVfmbLtToAICl0ucC60aDl36rDE6dZEc56LVYqi5M1WP6W2dJFQK4Ah0lwAmATffRWU6odp6EQfis6ZnRmiIoICIiAIiIAiIgCIiAIiIAiIgCIq69TKCeSAitVy2F3HQfU9FqmnN58Uzm6/botyhhbSbl1z9vJRVLW6kTy1Pou6PT8Y8p+Tsjg4x5SKf13fyg+ZH0WFSqSIc2x3bePIqTX3yGOZstwUJAOxuFEcEJ3xZEcMZ3xZpEt3Lz5EfIKzwgAtuXWBMm2p1vos8ZDWmTcggdVDaMhpktIbHa3IrHLDhJJu/Zlljwkk3fsqbTiw9eZWWFpyS49m9tyrf0j/MfQfZWMbAAGwhRlyRaSiRknFpJEoiLEyCIiAIiIAiIgCIiAIiIAiIgC1sW67RBNwSByCuNVswXCeUhYOxLR+4HoL/JStMlaZL31HcmDkLn1U06DRoL8zcrAuqO92n5u+1k/Rr6w3tI+62cM+TbTf4NXHLPbTZg6ajsjdBqe2wXVaAB0C1uGYctac2pPqrce7LTceketvqvT6bD+lhc2t1b/B6HT41ixuT7+TnUTncXm8GAO3581tKnCMhjR5+t1cvGlJybbPKlJydsIiKCAiIgCIiAIiIAiIgCIiAIiIAsXvABJ0CyVNS9Sk06F4n1H3Vox5SS9kxVtI28DgcwLntBLjMEaDYei3KWEa3RoHYK3G4ttJtzJOgGp8th1XHr1qlUeM5Wn9rfqd17+SfT9JFRq5Jfuz2JzwdOkquS/ezdqY2kDGcT0k/EBQMdS2ePQ/ZaTKLW6NA/OasXC/4pkv8ApRy/z8/SNo42l/OPj9lzeIcQa9pa0GSRtrHxV6Qs8v8AEMuSLjSSZnk6yc48aSIZoOylFZSw73+4x7v+LXO8rBcByFaK7EYV7AC+nUYDoXsc0HpLhE9FSgCIiAIiIAiIgCIiAIiIAiIgC1sXSc4tDbAXnr0Wyoc8AEnZAa+drTeXOMSTc30knRbK52WxnUmfObfRbAxBsCJIibxeJ2C0lCVr2y8oO17Zsoq6NTMDaIMf4VizKBZUmF7gxgLnOMNaNSen5Zei4V7Pg0xVrAkOAysEiAT77iL6XgefT0mFwtJgH6ZjKItlHI+MgZnT1VlFkWcHBeyBgGtUj+lg+bz9B5r0nD2MDA1gs0DZVYvGNyZZku8PrynUqMDhwfG6S7aCQ0eWh7n4aK6VEWdvCNDg5rgCDY/UHn/dfPva7gX6FQvYP4b7wB7h3HRnLlpuF7pzstNzmktc3lv5GQuJiuIue+lTewh7c5cQJa9mX3m25xLdR2go1ZB8+Re34l7JsqNDsK5rXhvipmwJ/pAHhPwt1leJe0tcWOaWuaYc1whzTyIWbVFkyERFBIREQBERAEREARFhVcQ0ka6DubD5oCqpUIdIuBYjnP2t8VjUqFwjKY7358iFdUYG2F3cvqTspwrSXEGDAkwNCTp6LsWCPJQb38HUsMeSi3soZY+6JMwZk2HXRSymY90z1IuedpKteJeeTbDqSLk+RhWLGb/Tm1EzlLhJpGNNmUAclt8OwTq1RrGjXXkGj3ifL5hU0KLnuDGCXOMAL6FwThIoMIY0OebuM+I9IiwHKd91nFWYNmziXhjWgEzYNAFzA0HoqaWCLnh9RxnKRkERBIMuOrjy0FytTCue5784DcpIkyQGWMNJjztr2C6mEw4qg5XOaR7rtjEe8NCD8tDOmhU0+JYBkNe1jGva6QQACbFpE72J9At3CEZBH4VFVmZjhEGCL6tIsQT0IWnwnO9oeXFoIEMAbGn7iRJPaFAO018MLWgl75yjsBJnQASNea4HGGCliKcH3WmRJJvlmO8H0XZZhC4Esc4OiLEb3i+3ReW4piXl7A9oa9jcpInx3JaRNx21B5xeQevwjmVGwWgHYix9ea5PtD7Nmqzww5zQcjj7w3yk/uYesxr0VHCKzwQGNzGLC245nRomeq6T2YoVS5rmEEaO27xETsATt3QHyx7C0lrgWuaYcDqCNQVC9j7Y8LLmf6ke+ABUAgSBbNAMSOe4HReOWTVF0ERFACIiAIiIAsKrZGsaGeUGfopcbTrsBzJsB6rebg6dNodUiRuRqdbDcyunpumlmtp0l3bN8OB5badJd2cymf5GOdzOgPmdStzA0SGkkQSSdja0aKf9aSfCwAf1G/oBb1WFTEPIgFo6gGfIk/RdWN9NgfLk2/to3xvBifK239ihnvP/AOR+EKxYUqeWbkkmSTuVmvOnLlJv2zjk+Umy/A4j9Oox/wDKZ7SC0n0JX0nhlQZGxqNQe+p5yvl69lwV1UUWOdduUCb5mWDgSN2xB9VMTNne4vg87/DIkCYJaD6aJwvhwpAy5rWkzkBIDbRabyYBsB21WjSx5Js/PpAYQSJuASPd8477Lbpsc8ZqpB3yzb/uf3H4dN1cgnE49n6ha10syS5x0k6uJO0DznoYp4S+AGBpAgFv9IiIJ1nRaWLLmVA4gQ45o16GeZvHmY1JVvDMIwRGVwNwC2bcw64HKAoB6LD12saS8gCQPwLxnG358QXcgLbeIkj6+V+S9bTwrSAHMBDjAIsW6yZBkabc15puCnFPbLnZXnKdzEQO4gCdo5kIDt8FwIDczyZOuxuf3HY9BoOq28TWpMP8UEQfeh2XpJFgNrqp2AqyA2o3K2PBliDF/ECZPpqqMYH/AKniaYkSbkW0jvNh67KQTjWsqsqU2+JhZ7zdAXA2nYxf05r5aOuq+wM4cGgmn/DLhdouz028tF8s41SyYio0CPELDYljS7/0SfNUkiUaSIioWCIiAIiIDCsHEeGJkEE7QZ+izeS52ZxzO25Do0bfNEVlOSi0np+C3JpVegiguA13sqsSfDHO33UJWVSstY8G4MqVpsLmzAsdj8THoFsUXkgzz9VLi1vwWcWt+C1e39mH+ECfCKVMkdcsH5FeHXrfZRwaxhdo4PbfTMKri2dtyO5CR7lGeifTbByQNydABGoOnmuQa9RrM0OIElpLYB3FtcvnO8zEdp1Rps4EDqDeOm6lwD2kZrEEGCDrYyVoVPN4nF1XvbrEiRliATodwO+xI3W37PvfBgNIvqfEG5jEwLH1mAuoykWOc4w7MQJOwsLwPyy0eGj9Os+kIixHYjMDroSXjyCgHbLHuYQzLG8nS14GX4ri/wC4to1XsLTnmCQJOgLcp3kOB0tJXaZVDGvcTBiAuRw3g7n1DiXmc0fpjmA0NafRospB0sLi36NY4zq5xAAm5PYC09udtj9V+WSwuGwkA9T+cueuvh8UIIJEgkBgPieQd9wLX2C6TTlHiILzNiQMxGjRyE280BFDEseIaYJBtoR5bbL5x7YQajHRcsv5OIX0HF4hrDTe8tpgZnOJOgywRO9yF8x49Wc6qMwI8OZoIghrnvcJ6xAI2yqsuxKOYiIsywREQBERAERCbgASToB67qUm3SJSb0imo2ZJMNBjuenrHqlClmJBzC03O2nOyuGDdrAb1cZInkBYeqtpMazMXPEki+mggCJP4V6GHDK1yjS8tnbixu1apebNSkwGTtJy3OltY5kSrmiNFXh/dHYKxcEm2zicmwvacEYz/StaQHNuXNsRDnHOT2II8+q8WvVeysupxuyoY7FrXekkpHuVZlxN9egKhovLsga9rXAO8Mw8hzpcYEG5tmWhgPbthj9ekQ7d7I+IP38l6rFUHfw3UgAZu0m2UtM+n5suZW9mMM4ue+hlO+V5AnWQAQArO/BBnhPavDVTkFTLIj+I3Lm21BgfBa9Oqx+I8d3AtYHz+3KXDvexMbg2tFVbhuHpiaWFY6P3PmPQyT+WXP4dwx9So5khuWJPIGYBB1sDr0lNkHtsThqTaTnPmBr4yCZEC83vFp0lcRnFmsDXVKwZTYIDbkyCZyjcxFrkX0WvxLh9VrGue95IcA1plw0IlroIBBjr3WlhcE3MRWp5pEQbwBY5TGxmQpBsM9p8A0vf/EcXAQ3LBzXzE3DSdN49StXBe2WLr1RSw7GMaSP2lxYN3OMhvM6LLEeyWE94vq0wdBkc4eRa1xjqu1w+lTpsFLDMIY676j2FjnAWgB0OdJGsREhRsnR1eFYV1VwfVc54bMZ9AToGxDfCNTHLqvK+3QArsDQBDXaf8rfIr2ldhaxga6GtAD2GPETfcTNzJ+y+d+1OIzYh+2UNb8M//wBn0SXYRTbpHKRRmQuWVmvB+N7olFAUqSrVOgiIhAU0armOkBpsRJ2kgyANdOihFaE3Bpp00TGTi7XcVJcZccx67dhoPJEWNR8DmeSOUpO3tsltydvbJe8ASTCla9Y5tjAkmw5d+UrKm10i5gdr7D7qXBpW9BwaWy5d/wBka5FVzBuA7zBDTPfOPRcBdDgVQtrs5Olp8wS3/wBhqrHuUZ9AeCHtJ0yuFhYElpknbTfnrz0cfjcry0CSBdx/a4jw5W7mPPS66IxDS1rpsbDqT+3v06Lk4bh0XeQYJc4CRrMnSSb9NVqVNSjTqOYXCXPN3cwCSAQN/d16BXcLYadW5DnOGV4ETLfE0nr4nA9xyM9bGue1ngG7RPJpNzHZaOG4c2nWD6bswILakuBIJuHHfnqoB0OOYhwwxIbEbkiNxYzqtf2goshtRmxcXEftkSLd5/CrOJuNWlUw4Ek5AO7nSZ7ASrcNwphJaHh5Id+o4ZZDjlykQJ52uFIOGzGuY08zlNo5khttbz6dV3eHYYuZ+pmOcb8zq6Omg/6rzj8OQ8NiALieeg8gGz/1G69dg6mSjIBIAAA3iOXP5kqAa1d7y0FzcoIEEGfJ1rHVfLsdVL6zybnO7tYx6AAQvpPHONsGFdUZeIy99G67S4fFfLaGpWeWVHd0eBZJfV2Mmncyfl5BZLHOOUKS7p9Pms0y2bDFSuLTXw9mYKKGvClXRySVOqoIiIVCIiAKf0nEZtBESSGggnnc7KEA0uTAgSZgchyWmNxTbkn8UXg4rbv4BYGsN2kuIgNvaRbTv6qVCJkyc6pUkqE58q1VBW4WoGPY86Ne1x7BwJ+AVSAysyh9NwtMGSYMODh0OWMw5WPzV9OnGY/zH4LicBxwcym4HYMeNmuaAATymx7OC7L2EGWnXUHckiPhI9FqULWGddd/zktLEcNaTnYMrxoQYn+l3Q/Y7LPEYrIPEDDvdcInQm4JsYHn00VdTFv8TcjgQLiCTBEggtnVAaNDC1KweaYcSYzFxib5QAYHhsZiZAIW/wCy1N7HvY6JbZwGgvHh2j7KvAcRc1rWtcHFrQPA0u8IsC6AQ02+a36XEwc7wxzntEOy2kA8nbifK/VSCeP4UZC8OgkiZNgDqY+yuwVAZNXWEzsTzMbxtoJWlxyo8hjXAS8gi/hZvO2Y9+U2V+LxL203MIOewECJBsXDYRCA8V7XvaymymyzXOc+Og+kut2C8xhhqul7T18+IIGjAGa2kXPxMeS0mNgLlyO2e70GNqKf5IqDceixHnPb6hWExqsROxBVYs2zYot93ZBE8j8fosmhVvMxb1/spaQdz8FomeXnhVpO18IsRB1RWOMIiIAiIgCIlpEmBIkxMeQUpW6JSt0UuJPhj3tO3XvdKLTzsr25QZANtJIG0aAWWLRAA5BbZFGMUotN+TWaiopI6nA8f+m8h3uPgHk1w913a8H+y93Rrl7j4SA2IJ3cQZA7THc9F8xXe4LxxzctJ7jlJhrrHLNg14Ordp27aZxl4MGj2eIZnbEeW2hH1+C1nY3K4ucPC7LeRILRlgk6kx81s4atnaCTDtx1GuqtZTEgkCZaSY1LCCJ9FcqamG4xTYfdySTqCC7c5ZAnnaVlwp4e+q5hEPIgdP3ntqO5C3n4UVS4P/qvexILQRHdavs0Aym9xyiDGYEXjkeQnsgI4phC/FMh0eH0i8gc7j0F1zPaTiooNGY5qjWkNH8ziZJMbAZZ79VdieMfoMdWrO8b7MZHiDBvB/c6ew35L51jMU+vUNR5lzj6DYDoFnOXFHT0+B5Jb7FdEEkk369SrkaIEIuVn0WOHCNGLn3j89FDo3Cl47pPI+qtGjkzvKpOmmvT8/YwDPL5fCyzy9PzzQtGsKAwayfU/FXSs86U5Rb1Xw1ZLB0hZIiucknbsIiIQEREAREQBERAEUxyWDWkEyVbi6vwW4urPR8D9ov0/BVuywDtwNAHdBz/AMr0GPxTqngoPAH73gn0aRoe3+fnyzo1nsOZj3NPQ/TRFIpR9AwlMsuHvBi/8RzgZ1lpOXzj0WP+4DC4dznubJcQwADMBqYGhcbdBroF4j/cq29Z5vPvH6fJamLe97sz3FxjUme0cgjlrRaEU5fV2MuJ49+IqGo/XQCScokmJOupuq6bI7rJrYsPz8hSuZys+jw4YwSolQeilYu/x3Q2n2MHv/PsgbH58whde/n9Csif7FaRSPD6rJOU+LA7DuFAbOnyTfkefNTmjVW0YXNKk/x7JAUoikxd+QiIhAREQBERAEREAREQBEcDFkCmtWTWrCxO5WSxiAbqrLQ/y+wbr+c4UnUef0UNtHb8+axfr20+B+6zcd0ezjzpYOfz/wBJY7WecepgLEmWmO/19Rf0WFTl1HnugMSRa/1v3v8ANOJSXU0+MvlfJlN4P9z+ffms26fI81U38HIj+0fBXMd8fw/nVXXo4Zvkuae1/on87KUIRSlRjlmpPklXv0Y5Nxb5KQVKKTNu+4REQgIiIAiIgCIiAIiIAiIgCEIiAgn4H8+aqDvh/j6Kzn3+gWDPn8wqtbs6YZGocX2sgNvP9I+EqXHTmfn/AJUjWFW4E2/NJ8roi8mm3L7MyHI9vsfirMnXefv9fVVv1mOU+auClGE3u12YREUmQREQBERAEREAREQBERAEREAREQBERAYuGv5ssghCKC7knFLzsjf82WIsfh9R9VnCwfsfz81RotCXeL8qv7Eu+dipY2BH50R7ZCNMhSUb0SiIhUIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiALGo2R+eiyRCU6dkMNlKhilBLuwiIhAREQH//Z” alt="Entrar"></a>
+    <a href=”#”><img src=”https://1drv.ms/i/s!Aplufxu8Yiy1gWa3KgZ1YErCWZcj?ea0xfbY” alt=" Cadastro"></a>
+    <a href=”#”><img src=”https://1drv.ms/i/s!Aplufxu8Yiy1gX7F8Qmt61CQguHm?e1aUew1” alt="Meu Stand"></a>
 </header>
+
 <section>
+   
     <div>
     <h2>Sobre JoJo</h2>
     <p>JoJo's Bizarre Adventure é como se um desfile de moda e uma academia de musculação tivessem um bebê. Tem poses estranhas, cabelos extravagantes, vampiros estilosos e batalhas tão exageradas que os personagens devem ter feito aulas de modelo antes. Ah, e os poderes são representados por entidades chamadas Stands. É tão maluco que você vai rir, chorar e se perguntar se alguém esqueceu de tomar a medicação!</p>
     <p>O anime JoJo´s Bizare Adventure, mais conhecido como JoJo ou JJBA, busca trazer vários elementos cômicos e referencias tanto nos personagens, quanto em STANDS. O criador do anime conhecido como Araki publicou o seu mangá pela primeira vez em 1987, entretanto, o mangá ganhou alguns filmes 10 anos depois e, atualmente, sabemos que este mangá nada bizarro ganhou um anime que é muito reconhecido e possui carinho pela sua bizarrice e referências de formas cômicas.</p>
-    <p>Para saber o que é um stand, acesse a aba Meu Stand.</p>
+    <p style = "font-family: 'Castoro Titling', cursive;">
+    </p>
     </div>
+  
+
 </section>
 
 <section>
-    <div>
-      <img class="primeiratemp" src="https://th.bing.com/th/id/OIP.xVA-tW7v3SSIA5GjyGNQrgHaFi?w=230&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7">
-        <h2>PRIMEIRA TEMPORADA</h2>
-        <p>Bem, a primeira temporada de JoJo's Bizarre Adventure" é uma montanha-russa alucinante de músculos, poses ridículas e poderes bizarros! A primeira temporada segue a saga da família Joestar, começando com o jovem Jonathan Joestar, um inglês educado que enfrenta seu meio-irmão malvado, Dio Brando. Dio é como um vampiro emo com um chapéu ridículo, e ele está determinado a destruir a vida de Jonathan e roubar sua herança. Prepare-se para batalhas épicas onde eles usam técnicas malucas como o Ripple, que basicamente é energia de hamon que transforma o corpo em uma fonte de superpoderes. Entre essas lutas de vida ou morte, você verá poses tão dramáticas que fariam até mesmo uma estátua de mármore corar. JoJo! Um dos animes mais bizarros que você assistirá!</p>
+<div class=" season">
+    <img class="parteum" src="https://wallpapercave.com/dwp2x/wp6290753.jpg">
+      <h2>Parte Um: Fantasma Sangrento</h2>
+      <p>Bem, a primeira temporada de JoJo's Bizarre Adventure" é uma montanha-russa alucinante de músculos, poses ridículas e poderes bizarros! A primeira temporada segue a saga da família Joestar, começando com o jovem Jonathan Joestar, um inglês educado que enfrenta seu meio-irmão malvado, Dio Brando. Dio é como um vampiro emo com um chapéu ridículo, e ele está determinado a destruir a vida de Jonathan e roubar sua herança. Prepare-se para batalhas épicas onde eles usam técnicas malucas como o Ripple, que basicamente é energia de hamon que transforma o corpo em uma fonte de superpoderes. Entre essas lutas de vida ou morte, você verá poses tão dramáticas que fariam até mesmo uma estátua de mármore corar. JoJo! Um dos animes mais bizarros que você assistirá!</p>
+      <p style = "font-family: 'Castoro Titling', cursive;">
     </div>
-    </section>
+  </section>
+
 
     <section>
-      <div>
-      <img class="caesar" scr="https://1drv.ms/i/s!Aplufxu8Yiy1gWqPc8eqwt9tsq57?e=fGDyxE">
-      <h2>SEGUNDA TEMPORADA</h2>
+      <div class=" season"></div>
+      <img class="images" scr="https://wallpapers.com/images/hd/hd-manga-character-of-jojo-rka4ywhduooe5ijo.webp"/>
+      <h2>Parte Dois: Tendência de Batalha</h2>
       <p>A segunda temporada de "JoJo's Bizarre Adventure" é como um passeio extremente exótico e salvagem em um parque de diversões cheio de esteroides e poderes malucos! Agora estamos na década de 1930 e conhecemos o neto de Jonathan, Joseph Joestar, um verdadeiro bad boy com um coração de ouro e uma língua mais afiada que prata em seus melhores dias! Ele enfrenta os Pillar Men, uma espécie de antigos super-vampiros que despertaram de sua longa soneca e estão prontos para dominar o mundo. Esses caras têm nomes como Santana, Wamuu e Esidisi, e eles são tão sinistros quanto os nomes sugerem. Mas Joseph está armado com um truque especial chamado Stand, que é basicamente um amigo invisível com superpoderes. Prepare-se para batalhas cheias de trapaças, jogadas imprevisíveis e diálogos sarcásticos enquanto Joseph enfrenta esses vilões bizarros. E não se surpreenda se você se pegar gritando "ORA ORA ORA" ou "WRYYYY" junto com os personagens.</p>
-      </div>   
-    </section>
+      <p style = "font-family: 'Castoro Titling', cursive;">
+      </p>
+      </section>
+
+      <section>
+        <div class=" season"></div>
+        <img class="jojopartres" src="https://e1.pxfuel.com/desktop-wallpaper/727/944/desktop-wallpaper-jojo-part-3-jotaro-aesthetic.jpg"/>
+        <h2>Parte Três: Cruzadores da Poeira Estelar</h2>
+<p>A terceira parte do anime JoJo's Bizarre Adventure, intitulada "Stardust Crusaders", segue Jotaro Kujo e seus companheiros em uma jornada para derrotar o vampiro Dio Brando. Eles descobrem que possuem habilidades especiais chamadas Stands, que são manifestações de seus poderes mentais. A equipe enfrenta diversos inimigos com Stands poderosos ao longo do caminho, enquanto viajam pelo mundo em busca de Dio. Cada batalha é repleta de estratégia, ação e reviravoltas surpreendentes. Jotaro, com seu Stand "Star Platinum", se torna o protagonista principal e luta para salvar sua mãe, que está sendo controlada por Dio. A parte 3 é marcada por personagens excêntricos, momentos engraçados e uma narrativa cheia de reviravoltas, culminando em um confronto final emocionante entre Jotaro e Dio. É uma jornada cheia de aventura, poderes sobrenaturais e muito estilo, característicos de JoJo's Bizarre Adventure.
+</p>
+        <p style = "font-family: 'Castoro Titling', cursive;">
+        </p>
+      </section>
+    
+    </div>
+    </body>
 
 </html>
