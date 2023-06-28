@@ -17,12 +17,8 @@ padding: 15px 0;}
 .itens{display: inline-block;
     margin: 0 150px;
     font-size: 200px;}
-section{
-background-image: linear-gradient(black,rgb(0, 0, 0));
-color: white;
-display:flex;
-}
-h2{padding: 60px 0;}
-p{width: 40%}
-img{width: 30%;}
 
+
+.img1{width: 30%;}
+.img2{width: 30%;}
+.img3{width: 30%;}
